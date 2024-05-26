@@ -15,64 +15,64 @@ function myColorChange() {
 
 // Przyklad 1 - w kontekscie Obiektu
 
-// const person = {
-//   name: "Joanna",
-//   greet: function() {
-//     console.log(`Cześć, jestem ${this.name}.`);
-//   }
-// };
+const personName = {
+  name: "Joanna",
+  greet: function() {
+    console.log(`Cześć, jestem ${this.name}.`);
+  }
+};
 
-// person.greet();// Wyświetli: "Cześć,jestem Joanna."
+personName.greet();// Wyświetli: "Cześć,jestem Joanna."
 
 //--------------------------------------------------------
 
 // Przyklad 2 - w Konstruktorze
 
-// function Car(make, model) {
-//   this.make = make;
-//   this.model = model;
-// }
+function Car(make, model) {
+  this.make = make;
+  this.model = model;
+}
 
-// const myCar = new Car("Suzuki", "Jimmy");
-// console.log(myCar.make); // Wyświetli: "Suzuki"
+const myCar = new Car("Suzuki", "Jimmy");
+console.log(myCar.make); // Wyświetli: "Suzuki"
 
 //--------------------------------------------------
 
 // Zadanie czesc 1 Obiekt "Maciej"
 
-// const person = {
-//   username: "Maciej",
-//   showName: function() {
-//     console.log(this.username);
-//   }
-// };
+const person = {
+  username: "Maciej",
+  showName: function() {
+    console.log(this.username);
+  }
+};
 
-// person.showName(); // Wywołanie metody showName() wyświetli: "Maciej"
+person.showName(); // Wywołanie metody showName() wyświetli: "Maciej"
 
 //----------------------------------------------------------------------
 
 //Zadanie czesc 2 Ksiazki
 
-// const bookshelf = {
-//   authors: [], // Pusta tablica na początek
+const bookshelf = {
+  authors: [], // Pusta tablica na początek
 
 //   Metoda dodająca autora do półki
-//   addAuthor: function(authorName) {
-//     this.authors.push(authorName);
-//   },
+  addAuthor: function(authorName) {
+    this.authors.push(authorName);
+  },
 
 //   Metoda zwracająca tablicę autorów
-//   getAuthors: function() {
-//     return this.authors;
-//   }
-// };
+  getAuthors: function() {
+    return this.authors;
+  }
+};
 
 // Dodawanie autorów do półki
-// bookshelf.addAuthor("Olga Tokarczuk");
-// bookshelf.addAuthor("Mikolaj Rej");
-// bookshelf.addAuthor("Dorota Maslowska");
-// bookshelf.addAuthor("William Shakespeare");
+bookshelf.addAuthor("Olga Tokarczuk");
+bookshelf.addAuthor("Mikolaj Rej");
+bookshelf.addAuthor("Dorota Maslowska");
+bookshelf.addAuthor("William Shakespeare");
 
 // Pobieranie listy autorów
-// const allAuthors = bookshelf.getAuthors();
-// console.log("Lista autorów na półce:", allAuthors);
+const allAuthors = bookshelf.getAuthors();
+console.log("Lista autorów na półce:", allAuthors);
