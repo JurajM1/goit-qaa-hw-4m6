@@ -22,7 +22,7 @@ function myColorChange() {
 //   }
 // };
 
-// person.greet();// Wyświetli: "Cześć, jestem Joanna."
+// person.greet();// Wyświetli: "Cześć,jestem Joanna."
 
 //--------------------------------------------------------
 
