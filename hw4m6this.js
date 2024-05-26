@@ -16,13 +16,13 @@ function myColorChange() {
 // Przyklad 1 - w kontekscie Obiektu
 
 // const person = {
-//   name: "Joana",
+//   name: "Joanna",
 //   greet: function() {
 //     console.log(`Cześć, jestem ${this.name}.`);
 //   }
 // };
 
-// person.greet(); // Wyświetli: "Cześć, jestem Anna."
+// person.greet();// Wyświetli: "Cześć, jestem Joanna."
 
 //--------------------------------------------------------
 
